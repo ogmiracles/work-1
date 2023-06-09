@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сайт с картинками</title>
+  <style>
+    .container {
+      text-align: center;
+    }
+    
+    .main-image {
+      width: 640px;
+      height: 480px;
+    }
+    
+    .thumbnail {
+      width: 117px;
+      height: 90px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function changeImage(imageUrl) {
+      var mainImage = document.getElementById("mainImage");
+      mainImage.src = imageUrl;
+    }
+  </script>
+  <img src="images/" alt="">
+</head>
+<body>
+  <div class="container">
+    <img id="mainImage" class="main-image" src="images/3.jpg">
+    <br>
+    <img class="thumbnail" src="images/1.jpg" onclick="changeImage('1.jpg')">
+    <img class="thumbnail" src="images/2.jpg" onclick="changeImage('2.jpg')">
+    <img class="thumbnail" src="images/3.jpg" onclick="changeImage('3.jpg')">
+    <img class="thumbnail" src="images/4.jpg" onclick="changeImage('4.jpg')">
+    <img class="thumbnail" src="images/5.jpg" onclick="changeImage('5.jpg')">
+  </div>
+</body>
+</html>

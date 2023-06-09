@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Крутящиеся картинки</title>
+    <style>
+        .rotate-left {
+            animation: rotateLeft 5s infinite linear;
+        }
+        
+        .rotate-right {
+            animation: rotateRight 5s infinite linear;
+        }
+        
+        @keyframes rotateLeft {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+        
+        @keyframes rotateRight {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="images/right_arrow.png" class="rotate-left" alt="Картинка 1">
+    <img src="images/left_arrow.png" class="rotate-right" alt="Картинка 2">
+</body>
+</html>
+
